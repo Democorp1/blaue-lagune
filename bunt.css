@@ -58,48 +58,9 @@ h3 {
 	padding: 0;
 }
 
-#navigation {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	margin: 0;
-	padding: 1em;
-	width: 100%;
-	background: #00296d;
-	list-style: none;
-}
 
-#navigation li {
-	float: left;
-	height: 2em;
-	text-align: center;
-	margin: 0;
-	border: double 1px gold;
-	border-radius: .5em;
-	line-height: 150%;
-	font-family: Arial bold, Helvetica, sans-serif;
-	margin: 0 0 0 1em;
-}
 
-#navigation li a,
-#navigation li a:link,
-#navigation li a:visited {
-	text-decoration: none;
-	display: block;
-	height: 2em;
-	color: gold;
-	font-weight: bold;
-	padding: 0.1em 1em;
-}
 
-#navigation li a:hover,
-#navigation li a:focus,
-#navigation li a:active {
-	background: green;
-	color: #00296d;
-	border-radius: .5em;
-}
 
 /*DL, DT, DD Datenliste*/
 
@@ -116,6 +77,47 @@ dd {
 	padding: 0 0 0.5em 0;
 	font-size: 1.5em;
 }
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+} 
 
 
 
