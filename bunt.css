@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: #00296d;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	max-width: 65em;
+	margin: 0em auto;
+}
+
+section {
+	padding: 3em 1em 1em;
+	width: 100%;
+	background:#3AFFFF;
+}
+
+tbody tr:nth-child(even) { 
+  background-color: #e4ebf2; 
+  color: #000; 
+}
+th[scope=row] { 
+  color: #c32e04;
+  text-align: right; 
+}
+tbody tr:hover, tfoot tr:hover { 
+  background-color:#fffbf0;
+}
+
+tbody td:hover, tfoot td:hover { 
+  background-color: #fce4a2; 
+}
+
+img {
+	border: none;
+}
+
+h1 {
+	color: #00296d;
+	padding: 0.5em;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 0 0.5em 0;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	margin: 0;
+	padding: 1em;
+	width: 100%;
+	background: #00296d;
+	list-style: none;
+}
+
+#navigation li {
+	float: left;
+	height: 2em;
+	text-align: center;
+	margin: 0;
+	border: double 1px gold;
+	border-radius: .5em;
+	line-height: 150%;
+	font-family: Arial bold, Helvetica, sans-serif;
+	margin: 0 0 0 1em;
+}
+
+#navigation li a,
+#navigation li a:link,
+#navigation li a:visited {
+	text-decoration: none;
+	display: block;
+	height: 2em;
+	color: gold;
+	font-weight: bold;
+	padding: 0.1em 1em;
+}
+
+#navigation li a:hover,
+#navigation li a:focus,
+#navigation li a:active {
+	background: green;
+	color: #00296d;
+	border-radius: .5em;
+}
+
+/*DL, DT, DD Datenliste*/
+
+dt {
+	float: left;
+	clear: left;
+	width: 130px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 5px 135px;
+	padding: 0 0 0.5em 0;
+	font-size: 1.5em;
+}
+
+
+
