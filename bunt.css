@@ -118,6 +118,10 @@ dd {
   background-color: #04AA6D;
   color: white;
 } 
-span .link:hover {    cursor: default;       }
+	.link:hover {cursor: default;  text-decoration: none;}
+	.link:visited { text-decoration: none;}
+	.link:link {text-decoration: none;}
+	.link:active { text-decoration: none:}
+	.link {color:black;}
 
 
