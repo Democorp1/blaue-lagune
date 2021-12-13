@@ -118,6 +118,6 @@ dd {
   background-color: #04AA6D;
   color: white;
 } 
-
+span .link:hover {    cursor: default;       }
 
 
