@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<style> .Rolle {float: left;
+     width: 30%;
+     padding: 20px;
+     border-style: dashed;
+     background: #eee;text-align: center;}
+     
+     </style>
+</head>
+<body>
+
+<h2 id="boss">Banditos</h2>
+
+<div class="Rolle" id="links">?</div>
+<div class="Rolle" id="mitte">?</div>
+<div class="Rolle" id="rechts">?</div>
+     <br>
+<button type="button"
+onclick="roll()">
+<h4>Press Me.</h4> </button>
+
+<p id="demo">Money</p>
+<p id="result">nix</p>
+
+<script> 
+	var symbole= Array ("BAR","777","Coin","&pound;","&yen;","&hearts;","&spades;","&clubs;",
+                    	"&diams;","&euro;", "&#8224;");
+    var geld = 0;                	
+	function roll() {
+		
+		f1=symbole[Math.floor(Math.random()*symbole.length)];
+		f2=symbole[Math.floor(Math.random()*symbole.length)];
+		f3=symbole[Math.floor(Math.random()*symbole.length)];
+             document.getElementById('links').innerHTML = f1;
+             document.getElementById('mitte').innerHTML = f2;
+             document.getElementById('rechts').innerHTML= f3;	
+             if ((f1==f2) && (f1==f3)) {
+				  document.getElementById('result').innerHTML = "win";
+				  geld+= 1000;
+			      document.getElementById('links').style.background = "#00f";
+				  document.getElementById('mitte').style.background = "#00f";
+				  document.getElementById('rechts').style.background = "#00f";
+				  window.alert("winn");
+				 }
+			 else {
+				 document.getElementById('result').innerHTML = "loose";
+			     geld-=0.5;	 
+			     document.getElementById('links').style.background = "#eee";
+				 document.getElementById('mitte').style.background = "#eee";
+				 document.getElementById('rechts').style.background ="#eee";
+			 }
+			 document.getElementById('demo').innerHTML = geld;
+             
+	}
+</script>
+</body>
+</html> 
+
